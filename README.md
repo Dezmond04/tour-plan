@@ -2,4 +2,4 @@
 
 Project by Karih Igor
 
-Карих Игорь
+Карих Игорь ()
