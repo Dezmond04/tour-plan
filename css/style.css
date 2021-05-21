@@ -365,7 +365,7 @@ template {
   align-items: center;
   justify-content: space-between;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 32px;
 }
 .navbar-top__menu-button {
   display: none;
@@ -466,7 +466,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 15px;
   padding-bottom: 70px;
 }
 .hotel-info {
@@ -475,12 +475,15 @@ template {
   justify-content: space-between;
   padding-bottom: 20px;
 }
+.hotel-info__rating {
+  margin-top: 5px;
+}
 .hotel-info__offer {
   margin-left: 14px;
   margin-top: 4px;
 }
 .hotel-info__name {
-  margin-top: 4px;
+  margin-top: 2px;
   margin-bottom: 0;
 }
 .hotel-info__description {
@@ -512,7 +515,12 @@ template {
 }
 
 .stars {
+  display: flex;
   flex-basis: 100%;
+}
+.stars__item {
+  padding-top: 2px;
+  margin-right: 2px;
 }
 
 .offer {
@@ -526,7 +534,7 @@ template {
 
 .rating {
   max-width: 65px;
-  minh: 45px;
+  min-height: 45px;
   text-align: center;
   color: #fff;
   background-color: #EC1F46;
@@ -537,8 +545,13 @@ template {
   line-height: 10px;
 }
 .rating__counter {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.rating__countersub {
+  font-weight: 600px;
+  font-size: 10px;
+  line-height: 12px;
 }
 
 .swiper-container {
@@ -590,7 +603,7 @@ template {
 .booking__info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 9px;
+  margin-bottom: 5px;
 }
 .booking__price {
   display: flex;
