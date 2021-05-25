@@ -43,6 +43,9 @@ function init() {
 			searchControlProvider: "yandex#search",
 		},
 	);
+
+	myMap.behaviors.disable("scrollZoom");
+
 	myGeoObject = new ymaps.GeoObject({});
 	myMap.geoObjects.add(myGeoObject).add(
 		new ymaps.Placemark(
