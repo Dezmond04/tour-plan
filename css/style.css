@@ -20,6 +20,7 @@ img {
 input,
 button {
   outline: none;
+  border: none;
 }
 
 button {
@@ -605,6 +606,7 @@ template {
 }
 
 .booking {
+  font-family: "Nunito", sans-serif;
   border-radius: 8px;
   width: 350px;
   min-height: 210px;
@@ -700,8 +702,6 @@ template {
 }
 
 .newsletter {
-  max-width: 1445px;
-  margin: auto;
   position: relative;
   padding: 76px 0 68px 0;
   background-position: center;
@@ -768,8 +768,7 @@ template {
   right: 0;
   top: 0;
   height: 100%;
-  width: 67px;
-  border: none;
+  min-width: 67px;
   background-color: #EC1F46;
   font-weight: bold;
   font-size: 12px;
@@ -892,6 +891,82 @@ template {
   margin: 0;
 }
 
+.activities {
+  padding: 60px 0 98px;
+}
+.activities__title {
+  margin-top: 0;
+  margin-bottom: 57px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000;
+}
+.activities-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+  padding: 24px 69px 24px 26px;
+  width: 255px;
+  height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.card:last-child {
+  padding-right: 25px;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+.card__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+.card__title {
+  margin-top: auto;
+  margin-bottom: 18px;
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+.card__button {
+  font-family: "Nunito", sans-serif;
+  min-width: 100px;
+  min-height: 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  background-color: #EC1F46;
+  border-radius: 4px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -906,6 +981,11 @@ template {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+
+  .card {
+    width: 220px;
+    height: 220px;
   }
 }
 @media (max-width: 992px) {
@@ -959,8 +1039,20 @@ template {
   .reviews-slider__item {
     max-width: 580px;
   }
+
+  .activities-wrapper {
+    flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 340px;
+    height: 250px;
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
@@ -1050,6 +1142,16 @@ template {
     right: 50%;
     transform: translate(50%, 0);
   }
+
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .card {
+    width: 49%;
+    height: 250px;
+  }
 }
 @media (max-width: 576px) {
   .logo {
@@ -1075,5 +1177,9 @@ template {
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
+  }
+
+  .card {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
