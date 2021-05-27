@@ -1590,6 +1590,7 @@ template {
   }
   .footer__title--inline {
     margin-bottom: 22px;
+    flex-basis: 100%;
   }
   .footer__additional {
     grid-row: 4;
