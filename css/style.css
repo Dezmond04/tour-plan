@@ -403,6 +403,9 @@ template {
   font-size: 14px;
   line-height: 18px;
 }
+.navbar-menu__item--mobile--visible {
+  display: none;
+}
 
 .logo {
   width: 177px;
@@ -1189,7 +1192,7 @@ template {
   }
 
   .navbar__menu {
-    width: 673px;
+    max-width: 673px;
     margin-left: 15px;
   }
   .navbar__menu__link {
@@ -1339,13 +1342,60 @@ template {
   }
 }
 @media (max-width: 767px) {
+  body {
+    padding-top: 78px;
+  }
+
   .container {
     max-width: 576px;
     width: 92%;
   }
 
-  .navbar__search, .navbar-menu, .navbar__user {
+  .navbar__mobile--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 5;
+  }
+  .navbar__user--mobile--hiden, .navbar__search--mobile--hiden {
     display: none;
+  }
+  .navbar__user--mobile--visible, .navbar__search--mobile--visible {
+    display: flex;
+  }
+  .navbar__search {
+    margin-bottom: 37px;
+  }
+  .navbar__user {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+    padding-top: 10px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+    z-index: 5;
+  }
+  .navbar-menu {
+    flex-direction: column;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: flex;
+  }
+  .navbar-menu__item--mb2 {
+    margin-bottom: 17px;
+  }
+  .navbar__menu {
+    margin-left: 3px;
   }
   .navbar-top__menu-button {
     display: flex;
@@ -1365,6 +1415,13 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+
+  .user__name--light {
+    color: #fff;
+    margin-left: 0;
+    margin-top: 6px;
+    margin-bottom: 16px;
   }
 
   .stars {
@@ -1482,6 +1539,11 @@ template {
   }
 }
 @media (max-width: 576px) {
+  .navbar__search {
+    max-width: 245px;
+    margin-left: 0;
+  }
+
   .logo {
     width: 99px;
   }
