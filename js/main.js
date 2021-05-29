@@ -103,21 +103,24 @@ $(document).ready(function () {
 		}
 	});
 	// Обработка форм
-	// $(".form").each(function () {
-	// 	$(this).validate({
-	// 		errorClass: "invalid",
-	// 		messages: {
-	// 			name: {
-	// 				required: "Please specify your name",
-	// 				minlength: "Name must be at least 2 letters long",
-	// 			},
-	// 			phone: "We need your phone number to contact you",
-	// 			user_email: {
-	// 				required: "We need your email address to contact you",
-	// 				email: "Your email address must be in the format of name@domain.com",
-	// 			},
-	// 		},
-	// 	});
-	// });
+	$(".form").each(function () {
+		$(this).validate({
+			errorClass: "invalid",
+			messages: {
+				name: {
+					required: "Please specify your name",
+					minlength: "Name must be at least 2 letters long",
+				},
+				phone: {
+					required: "We need your phone number to contact you",
+					minlength: "Your phone must be 11 digits long",
+				},
+				user_email: {
+					required: "We need your email address to contact you",
+					email: "Your email address must be in the format of name@domain.com",
+				},
+			},
+		});
+	});
 	$(".input_phone").mask("+7 (000) 000-00-00");
 });

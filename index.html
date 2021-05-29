@@ -283,20 +283,22 @@
 					subscribe to our
 					<span class="newsletter-title__strong">Newsletter</span>
 				</h2>
-				<form
-					action="send.php"
-					method="POST"
-					class="form subscribe newsletter__subscribe"
-				>
-					<input
-						type="email"
-						class="input subscribe__input"
-						placeholder="Your email address"
-						name="user_email"
-						required
-					/>
-					<button class="subscribe__button">Send</button>
-				</form>
+				<div class="subscribe__input-group">
+					<form
+						action="send.php"
+						method="POST"
+						class="form subscribe newsletter__subscribe"
+					>
+						<input
+							type="email"
+							class="input subscribe__input"
+							placeholder="Your email address"
+							name="user_email"
+							required
+						/>
+						<button class="subscribe__button">Send</button>
+					</form>
+				</div>
 			</div>
 			<!-- /.newsletter-wrapper -->
 		</section>
@@ -667,6 +669,7 @@
 									placeholder="Your Full Name*"
 									name="name"
 									required
+									minlength="2"
 								/>
 							</div>
 							<div class="footer__input-group">
@@ -676,6 +679,7 @@
 									placeholder="Phone Number*"
 									name="phone"
 									required
+									minlength="18"
 								/>
 							</div>
 							<textarea
@@ -722,6 +726,7 @@
 						placeholder="Phone Number*"
 						name="phone"
 						required
+						minlength="18"
 					/>
 					<input
 						type="email"
