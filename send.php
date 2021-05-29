@@ -23,7 +23,10 @@ if(!isset($user_email)){
     ";
 }
 else{
-    $body = " <h2>Вы подписались на рассылку новостей </h2>";
+    $body = "  
+    <h2>Новая подписка </h2>
+    <b>Email:</b> $user_email";
+}";
 }
 
 
@@ -52,11 +55,9 @@ try {
         $mail->addAddress('i.karih.home@gmail.com');
     }else
     {
-        $mail->addAddress($user_email);
-    }
-    
-    
-    // $mail->addAddress('i.pereyaslovskiy@gmail.com');  
+        $mail->addAddress('i.karih.home@gmail.com');
+    }   
+     
     // $mail->addAddress('youremail@gmail.com'); // Ещё один, если нужен
 
 
