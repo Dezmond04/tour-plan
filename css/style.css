@@ -25,6 +25,13 @@ button {
 
 button {
   cursor: pointer;
+  background: linear-gradient(to left, transparent, transparent 50%, #240b36, #c31432);
+  background-position: 100% 0;
+  background-size: 400% 200%;
+  transition: all 0.25s;
+}
+button:hover {
+  background-position: 0 0;
 }
 
 .input {
