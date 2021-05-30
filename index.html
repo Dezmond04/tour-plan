@@ -11,6 +11,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="css/aos.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<script src="https://api-maps.yandex.ru/2.1/?apikey=fcc4a816-19a1-4820-8536-aa291075221f&lang=en_US"></script>
 	</head>
@@ -189,7 +190,11 @@
 				<!-- /.hotel-info -->
 				<div class="hotel-grid">
 					<!-- Slider main container -->
-					<div class="swiper-container hotel-slider hotel__slider">
+					<div
+						class="swiper-container hotel-slider hotel__slider"
+						data-aos="fade-right"
+						data-aos-duration="100"
+					>
 						<!-- Additional required wrapper -->
 						<div class="swiper-wrapper">
 							<!-- Slides -->
@@ -226,7 +231,11 @@
 					</div>
 					<!-- /.swiper-container -->
 					<div class="hotel-right">
-						<div class="booking hotel-right__booking">
+						<div
+							class="booking hotel-right__booking"
+							data-aos="fade-left"
+							data-aos-duration="300"
+						>
 							<div class="booking__info">
 								<div class="booking__price">
 									<span class="booking__start">price starts as</span>
@@ -459,7 +468,11 @@
 			<div class="container">
 				<h2 class="activities__title">Other Activities</h2>
 				<div class="activities-wrapper">
-					<div class="card activities__card">
+					<div
+						class="card activities__card"
+						data-aos="fade-right"
+						data-aos-duration="300"
+					>
 						<img
 							src="img/activity-1.jpg"
 							alt="The curious corner of chamarel"
@@ -469,7 +482,11 @@
 						<button class="card__button">Book Now</button>
 					</div>
 					<!-- /.card -->
-					<div class="card activities__card">
+					<div
+						class="card activities__card"
+						data-aos="fade-right"
+						data-aos-duration="500"
+					>
 						<img
 							src="img/activity-2.jpg"
 							alt="Gymkhana club golf course"
@@ -479,7 +496,11 @@
 						<button class="card__button">Book Now</button>
 					</div>
 					<!-- /.card -->
-					<div class="card activities__card">
+					<div
+						class="card activities__card"
+						data-aos="fade-right"
+						data-aos-duration="700"
+					>
 						<img
 							src="img/activity-3.jpg"
 							alt="Tamarind falls hiking trip - full day"
@@ -489,7 +510,11 @@
 						<button class="card__button">Book Now</button>
 					</div>
 					<!-- /.card -->
-					<div class="card activities__card">
+					<div
+						class="card activities__card"
+						data-aos="fade-right"
+						data-aos-duration="900"
+					>
 						<img
 							src="img/activity-4.jpg"
 							alt="The blue marine discovery quest"
@@ -511,6 +536,7 @@
 						src="img/vertical-logo.svg"
 						alt="Logo: Best Tour Plan"
 						class="logo footer__logo"
+						data-aos="zoom-in-right"
 					/>
 					<div class="footer__list footer__categories">
 						<h3 class="footer__title">All Categories</h3>
@@ -756,6 +782,7 @@
 		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/jquery.validate.min.js"></script>
 		<script src="js/jquery.mask.min.js"></script>
+		<script src="js/aos.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
