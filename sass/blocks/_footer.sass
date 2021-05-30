@@ -45,6 +45,7 @@
     &-form
       grid-column: span 2
       padding-left: 8px
+      margin-bottom: 74px
   &__form
     display: flex
     justify-content: space-between
@@ -53,6 +54,7 @@
     font-weight: normal
     font-size: 12px
     line-height: 15px 
+    
   &__title
     font-style: normal
     font-weight: bold
@@ -118,7 +120,28 @@
     &-wrapper
       display: flex
       justify-content: space-between
+      align-items: center
       width: 100%
+  &__bottom
+    display: flex
+    justify-content: space-between
+    align-items: center 
+    grid-column: 2 / 5 
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px  
+    padding-left: 130px  
+    &-list
+      display: flex
+      justify-content: space-between  
+      align-items: center
+      min-width: 283px
+      list-style: none 
+      padding: 0
+    &-link      
+      text-decoration: none
+      color: $light 
 .contact-form
   &__title
     margin-bottom: 37px
