@@ -1278,6 +1278,7 @@ template {
 .modal__button {
   width: 160px;
   min-height: 48px;
+  background-color: #EC1F46;
 }
 .modal__button-wrapper {
   display: flex;
