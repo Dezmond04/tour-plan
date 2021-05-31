@@ -813,7 +813,6 @@ template {
   font-weight: 300;
   font-size: 12px;
   line-height: 14px;
-  color: #BDBDBD;
 }
 .subscribe__button {
   position: absolute;
@@ -1230,6 +1229,8 @@ template {
   top: 50%;
   left: 50%;
   max-width: 493px;
+  max-height: 100vh;
+  overflow-y: auto;
   padding: 33px 88px;
   background-color: #0A223D;
   color: #fff;
@@ -1239,7 +1240,6 @@ template {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.2s;
-  overflow-y: scroll;
 }
 .modal__dialog--visible {
   visibility: visible;
