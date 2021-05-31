@@ -154,9 +154,7 @@
       padding: 0
   .contact-details
     &__ul
-      padding-left: 10px
-  .button__hover
-    background: $primary   
+      padding-left: 10px    
          
 @media (max-width: 767px)
   body  
@@ -166,24 +164,27 @@
     width: 92%
   .navbar
     &__mobile
-      &--fixed
+      &-fixed
         position: fixed
         left: 0
         top: 0
         right: 0
-        z-index: 5                
-    &__user, &__search
+        z-index: 5  
+        background-color: #fff              
+    &__user, &__search  
+      &-thankyou   
+        display: none   
       &--mobile
         &--hiden
           display: none
         &--visible
           display: flex                    
     &__search
-      margin-bottom: 37px 
+      margin-bottom: 37px       
     &__user
       flex-direction: column
       justify-content: center 
-      margin-bottom: 10px      
+      margin-bottom: 10px           
     &-bottom
       display: none
       position: fixed
@@ -324,6 +325,9 @@
       flex-wrap: wrap      
       &-list
         margin-top: 5px
+  .contact-form
+    &__thankyou
+      display: none
       
             
 @media (max-width: 576px)
@@ -362,6 +366,9 @@
         margin-top: 5px
     &__title
       margin-bottom: 37px
+    &__input
+      &-group
+        width: 70%
   .subscribe
     width: 100%
     &__input
@@ -393,12 +400,7 @@
       font-style: normal
       font-weight: bold
       font-size: 18px
-      line-height: 23px
-  .card
-    width: 100%
-    padding-right: 95px 
-    &:last-child
-      padding-right: 40px
+      line-height: 23px  
   .footer
     padding-top: 68px
     &-wrapper
@@ -473,15 +475,43 @@
         padding-left: 4px
   .modal
     &__dialog
-      max-width: 330px
+      width: 92%
       padding-left: 45px
       padding-right: 45px
-    &__button
+    &__input
+      padding: 0 10px
+    &__message
+      margin-bottom: 15px
+    &__button               
       &-wrapper
         flex-wrap: wrap-reverse
         margin-top: 0
     &__info
       margin-bottom: 16px
+@media ( max-width: 475px )
+  .newsletter
+    &__input
+      &-group
+        width: 100%
+  .card
+    width: 100%
+    padding-right: 95px 
+    &:last-child
+      padding-right: 40px
+  .activities
+    &__card
+      &:nth-child(2)
+        order: 1
+      &:nth-child(4)
+        order: 2
+  .modal
+    &__dialog
+      padding-left: 20px
+      padding-right: 20px
+  
+        
+      
+  
 
     
     

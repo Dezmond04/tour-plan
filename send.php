@@ -26,8 +26,8 @@ else{
     $body = "  
     <h2>Новая подписка </h2>
     <b>Email:</b> $user_email";
-}";
-}
+};
+
 
 
 

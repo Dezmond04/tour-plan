@@ -17,86 +17,123 @@
 		<script src="https://api-maps.yandex.ru/2.1/?apikey=fcc4a816-19a1-4820-8536-aa291075221f&lang=en_US"></script>
 	</head>
 	<body>
-		<header class="navbar">
-			<div class="container">
-				<div class="navbar-top">
-					<a href="index.html" class="logo">
-						<img
-							src="img/horizontal-logo.svg"
-							alt="Logo: Best Tour Plan"
-							class="logo__image"
-						/>
-					</a>
-
-					<form action="#" class="search navbar__search">
-						<input
-							type="text"
-							class="search__input"
-							placeholder="Search Location"
-						/>
-						<button class="search__button">
-							<img
-								src="img/search.svg"
-								alt="Icon: search"
-								class="search__image"
-							/>
-						</button>
-					</form>
-
-					<a href="#" class="user navbar__user">
-						<img
-							src="img/user-avatar.jpg"
-							alt="Avatar: Nathan"
-							class="user__avatar"
-						/>
-						<span class="user__name">Nathan</span>
-					</a>
-					<!-- /.user -->
-					<button class="menu-button navbar-top__menu-button">
-						<span class="menu-button__line"></span>
-						<span class="menu-button__line"></span>
-						<span class="menu-button__line"></span>
-					</button>
-				</div>
-				<!-- /.navbar-top -->
-			</div>
-			<!-- /.container -->
-			<div class="navbar-bottom">
+	<header class="navbar">
+			<div class="navbar__mobile-fixed">
 				<div class="container">
-					<ul class="navbar-menu navbar__menu">
-						<li class="navbar-menu__item">
-							<a href="#" class="navbar-menu__link">All Deals</a>
-						</li>
+					<div class="navbar-top">
+						<a href="#" class="logo">
+							<img
+								src="img/horizontal-logo.svg"
+								alt="Logo: Best Tour Plan"
+								class="logo__image"
+							/>
+						</a>
 
-						<li class="navbar-menu__item">
-							<a href="#" class="navbar-menu__link">Hotels</a>
-						</li>
+						<form
+							action="#"
+							class="search navbar__search navbar__search--mobile--hiden"
+						>
+							<input
+								type="text"
+								class="search__input"
+								placeholder="Search Location"
+							/>
+							<button class="button search__button">
+								<img
+									src="img/search.svg"
+									alt="Icon: search"
+									class="search__image"
+								/>
+							</button>
+						</form>
 
-						<li class="navbar-menu__item">
-							<a href="#" class="navbar-menu__link">Activities</a>
-						</li>
-
-						<li class="navbar-menu__item">
-							<a href="#" class="navbar-menu__link">Hotel Day Packages</a>
-						</li>
-
-						<li class="navbar-menu__item">
-							<a href="#" class="navbar-menu__link">Restaurants</a>
-						</li>
-
-						<li class="navbar-menu__item">
-							<a href="#" class="navbar-menu__link">Events</a>
-						</li>
-
-						<li class="navbar-menu__item">
-							<a href="#" class="navbar-menu__link">Rodrigues</a>
-						</li>
-					</ul>
-					<!-- /.navbar-menu -->
+						<a href="#" class="user navbar__user navbar__user--mobile--hiden">
+							<img
+								src="img/user-avatar.jpg"
+								alt="Avatar: Nathan"
+								class="user__avatar"
+							/>
+							<span class="user__name">Nathan</span>
+						</a>
+						<!-- /.user -->
+						<button class="menu-button navbar-top__menu-button">
+							<span class="menu-button__line"></span>
+							<span class="menu-button__line"></span>
+							<span class="menu-button__line"></span>
+						</button>
+					</div>
+					<!-- /.navbar-top -->
 				</div>
 				<!-- /.container -->
+				<div class="navbar-bottom">
+					<div class="container">
+						<ul class="navbar-menu navbar__menu">
+							<li class="navbar-menu__item navbar-menu__item--mobile--visible">
+								<a
+									href="#"
+									class="user navbar__user navbar__user--mobile--visible"
+								>
+									<img
+										src="img/user-avatar.jpg"
+										alt="Avatar: Nathan"
+										class="user__avatar"
+									/>
+									<span class="user__name user__name--light">Nathan</span>
+								</a>
+							</li>
+							<li class="navbar-menu__item navbar-menu__item--mobile--visible">
+								<form
+									action="#"
+									class="search navbar__search navbar__search--mobile--visible"
+								>
+									<input
+										type="text"
+										class="search__input"
+										placeholder="Search Location"
+									/>
+									<button class="search__button">
+										<img
+											src="img/search.svg"
+											alt="Icon: search"
+											class="search__image"
+										/>
+									</button>
+								</form>
+							</li>
+							<li class="navbar-menu__item navbar-menu__item--mb2">
+								<a href="#" class="navbar-menu__link">All Deals</a>
+							</li>
+
+							<li class="navbar-menu__item navbar-menu__item--mb2">
+								<a href="#" class="navbar-menu__link">Hotels</a>
+							</li>
+
+							<li class="navbar-menu__item navbar-menu__item--mb2">
+								<a href="#" class="navbar-menu__link">Activities</a>
+							</li>
+
+							<li class="navbar-menu__item navbar-menu__item--mb2">
+								<a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+							</li>
+
+							<li class="navbar-menu__item navbar-menu__item--mb2">
+								<a href="#" class="navbar-menu__link">Restaurants</a>
+							</li>
+
+							<li class="navbar-menu__item navbar-menu__item--mb2">
+								<a href="#" class="navbar-menu__link">Events</a>
+							</li>
+
+							<li class="navbar-menu__item navbar-menu__item--mb2">
+								<a href="#" class="navbar-menu__link">Rodrigues</a>
+							</li>
+						</ul>
+						<!-- /.navbar-menu -->
+					</div>
+					<!-- /.container -->
+				</div>
+				<!-- /.navbar-bottom -->
 			</div>
-			<!-- /.navbar-bottom -->
 		</header>
 		<nav class="breadcrumbs">
 			<div class="container">
@@ -126,19 +163,12 @@
 						<p class="hotel-description hotel-info__description">
 						<?php  echo $_SESSION['thankyou_description'];?>
 						</p>						
-							<a href="index.html" class="hotel__button">Go Back</a>						
+							<a href="index.html" class="button hotel__button">Go Back</a>						
+						
 					</div>
 				</div>
-				<!-- /.hotel-info -->
-			
-			</div>
-			<!-- /.container -->
+			</div>	
 		</section>
-
-			
-		</section>
-		<!-- /.reviews -->
-	
 		<footer class="footer">
 			<div class="container">
 				<div class="footer-wrapper">
@@ -263,7 +293,7 @@
 									/>
 								</div>
 								<div class="footer__numbers">
-									<a href="tel:269 1500" class="footer__contact-link"
+									<a href="tel:269-1500" class="footer__contact-link"
 										>Tel (business hours) : 269 1500</a
 									>
 
@@ -294,7 +324,7 @@
 						</ul>
 					</div>
 					<!-- /.footer__contact-details -->
-					<div class="contact-form footer__contact-form">
+					<div class="contact-form footer__contact-form contact-form__thankyou">
 						<h3 class="footer__title contact-form__title">Send us a message</h3>
 						<form action="send.php" method="POST" class="footer__form">
 							<input

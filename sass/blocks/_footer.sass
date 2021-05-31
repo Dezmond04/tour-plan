@@ -97,6 +97,12 @@
   &__link
     text-decoration: none
     color: inherit 
+    &:hover
+      color: $primary
+  &__contact
+    &-link
+      &:hover
+        color: $primary
   &__input 
     width: 100%
     &-group      
@@ -118,6 +124,13 @@
     min-height: 50px  
     color: $light 
     background-color: $primary 
+    padding: 18px
+    border-radius: 4px
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+  
     &-wrapper
       display: flex
       justify-content: space-between
@@ -146,6 +159,8 @@
 .contact-form
   &__title
     margin-bottom: 37px
+  &__thankyou
+    display: none
 
     
 

@@ -17,7 +17,7 @@
     position: fixed
     top: 50%
     left: 50%
-    max-width: 478px
+    max-width: 493px
     padding: 33px 88px
     background-color: $dark
     color: $light
@@ -27,6 +27,7 @@
     visibility: hidden
     opacity: 0
     transition: opacity 0.2s
+    overflow-y: scroll
     &--visible
       visibility: visible
       opacity: 1
@@ -61,8 +62,15 @@
     margin-top: 15px  
   &__button
     width: 160px
-    min-height: 48px  
-    background-color: $primary        
+    min-height: 48px 
+    padding: 18px
+    border-radius: 4px
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $light
+    background-color: $primary             
     &-wrapper
       display: flex
       align-items: center
