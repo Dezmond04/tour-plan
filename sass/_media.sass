@@ -26,6 +26,8 @@
     max-width: 700px
   .logo
     width: 132px
+  .button
+    background: $primary
   .navbar
     &-top
       padding-top: 30px
@@ -152,9 +154,17 @@
     &__bottom
       grid-column: 1/5
       padding: 0
+    &__link
+      text-decoration: none
+      color: inherit 
+      &:hover
+        color: #BDBDBD
+    &__number          
+      &:hover
+        color: #BDBDBD 
   .contact-details
     &__ul
-      padding-left: 10px    
+      padding-left: 10px      
          
 @media (max-width: 767px)
   body  

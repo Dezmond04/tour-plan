@@ -21,6 +21,7 @@ $(document).ready(function () {
 		},
 		// Optional parameters
 		loop: true,
+		autoHeight: true,
 
 		// Navigation arrows
 		navigation: {

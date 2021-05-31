@@ -14,7 +14,7 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 input,
@@ -1342,6 +1342,10 @@ template {
     width: 132px;
   }
 
+  .button {
+    background: #EC1F46;
+  }
+
   .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -1513,6 +1517,16 @@ template {
   .footer__bottom {
     grid-column: 1/5;
     padding: 0;
+  }
+  .footer__link {
+    text-decoration: none;
+    color: inherit;
+  }
+  .footer__link:hover {
+    color: #BDBDBD;
+  }
+  .footer__number:hover {
+    color: #BDBDBD;
   }
 
   .contact-details__ul {
