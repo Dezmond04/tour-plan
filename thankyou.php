@@ -293,17 +293,21 @@
 									/>
 								</div>
 								<div class="footer__numbers">
-									<a href="tel:269-1500" class="footer__contact-link"
-										>Tel (business hours) : 269 1500</a
-									>
+								<a href="tel:269-1500" class="footer__contact-link"
+										>Tel (business hours) :
+										<span class="footer__number">269 1500</span>
+									</a>
 
 									<a href="tel:52-56-61-38" class="footer__contact-link"
-										>Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am –
+										>Tel (hotline) Monday - Saturday:
+										<span class="footer__number">52-56-61-38</span> (08:00 am –
 										20:00 pm)</a
 									>
 
 									<a href="tel:52-56-61-38" class="footer__contact-link"
-										>Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a
+										>Tel (hotline) Sunday:
+										<span class="footer__number">52-56-61-38</span> (08:00 am –
+										14:00 pm)</a
 									>
 								</div>
 							</li>

@@ -37,16 +37,16 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    //$mail->SMTPDebug = 2;
+    // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'karih040890@gmail.com'; // Логин на почте
-    $mail->Password   = '040890bujhm'; // Пароль на почте
+    $mail->Username   = 'webcoupmailing@gmail.com'; // Логин на почте
+    $mail->Password   = 'webcoup2021'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('karih040890@gmail.com', 'Игорь Карих'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('webcoupmailing@gmail.com', 'Игорь Карих'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     // isset - проверка на существование переменной 
@@ -77,7 +77,7 @@ else {$result = "error";}
 }
 
 // Отображение результата
-//echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
 
 
 if(isset($_SESSION)){
