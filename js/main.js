@@ -89,10 +89,5 @@ $(document).ready(function () {
 		});
 	});
 	$(".input_phone").mask("+7 (000) 000-00-00");
-	AOS.init({
-		disable: function () {
-			var maxWidth = 800;
-			return window.innerWidth < maxWidth;
-		},
-	});
+	AOS.init();
 });
