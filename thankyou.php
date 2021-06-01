@@ -7,14 +7,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Best Tour Plan - Hotel Booking</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<script src="https://api-maps.yandex.ru/2.1/?apikey=fcc4a816-19a1-4820-8536-aa291075221f&lang=en_US"></script>
+		<link rel="stylesheet" href="css/aos.css" />
+		<link rel="stylesheet" href="css/style.css" />		
 	</head>
 	<body>
 	<header class="navbar">
@@ -178,6 +179,7 @@
 						src="img/vertical-logo.svg"
 						alt="Logo: Best Tour Plan"
 						class="logo footer__logo"
+						data-aos="zoom-in-right"
 					/>
 					</a>
 					<div class="footer__list footer__categories">
@@ -370,6 +372,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/parallax.min.js"></script>
 		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/jquery.mask.min.js"></script>
+		<script src="js/aos.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
